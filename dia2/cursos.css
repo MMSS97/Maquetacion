@@ -3,8 +3,8 @@
 }
 .main_padre{
     background-color: black;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
 }
 .main_padre header{
     display: flex;
@@ -30,39 +30,49 @@
     border: 7px solid transparent;
     width: 175px;
     padding: 15px;
-    border-radius: 12px;
+    border-radius: 25px;
     display: flex;
     justify-content: center;
     border-image: linear-gradient(45deg, #003366, #00ced1) 1;
 }
 .main_padre section {
-    width: 100%;
-    height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.main_padre section article{
+    border: 2px solid white;
+    border-radius: 6px;
+    width: 400px;
+    height: 600px;
+    display: flex;
     flex-direction: column;
-    letter-spacing: 3.8px;
-    margin-top: 50px;
+    justify-items: center;
 }
-.main_padre section div {
+.main_padre section article h3 {
     color: white;
-    
+    display: flex;
+    justify-content: center;  
 }
-.main_padre section div h1 {
+
+.main_padre section article ol p {
+    color: white;
+    text-align: justify;
+    padding-right: 30px;
+
+}
+.main_padre section article div {
     display: flex;
     justify-content: center;
-    color: white;
-    font-variant: small-caps;
-    font-size: xx-large;
-    text-align: center;
-}
-.main_padre section img {
-    width: 45%;
-    height: auto;
-    padding-top: 33px;
     
+}
+.main_padre section article div img {
+padding-top: 21px;
+
+width: 300px;
+height: auto;
 }
 
 .footer_padre div{
