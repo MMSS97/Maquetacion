@@ -1,0 +1,107 @@
+.main__padre {
+    display: grid;
+    grid-template-areas:
+    "header header imagen"
+    "hijo1 hijo2 hijo2"
+    "footer footer footer"; 
+   
+}
+
+
+
+
+.header__hijo {
+    grid-area: header;
+    height: 100px;
+    background-color: rgb(196, 9, 9);
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+
+
+}
+.imagen {
+    grid-area: imagen;
+    background-color: rgb(117, 35, 6);
+    height: 1fr;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+
+
+
+}
+.seccion__hijo1 {
+    background-color: rgb(212, 117, 39);
+    height: 500px;
+    display: grid;
+    grid-area: hijo1;
+    grid-template-areas: 
+    "aside1"
+    "vacio"
+    "aside2";
+}
+.vacio {
+    grid-area: vacio;
+    height: 1fr;
+}
+.aside1 {
+    grid-area: aside1;
+    color: lightcoral;
+    background-color: rgb(224, 224, 140);
+    height: 1fr;
+    text-align: center;
+    margin: 10px;
+    padding-top: 10px;
+
+}
+.aside2 {
+    grid-area: aside2;
+    color: lightcoral;
+    height: 1fr;
+    background-color: rgb(224, 224, 140);
+    text-align: center;
+    margin: 10px;
+    padding-top: 10px;
+}
+.seccion__hijo2 {
+    display: grid;
+    text-align: center;
+    grid-area:hijo2;
+    height: 500px;
+    gap: 5px;
+    color: white;
+    background-color: rgb(250, 63, 26);
+    grid-template-areas: "contenido"
+                        "texto";
+                        
+}
+.contenido {
+    grid-area: contenido;
+    height: 1fr;
+    background-color: rgb(250, 63, 26);
+    padding-top: 10px;
+    margin: 10px 10px 0 10px;
+    border: 1px solid white;
+}
+
+.texto {
+    grid-area: texto;
+    height: 1fr;
+    background-color: rgb(250, 63, 26);
+    padding-top: 10px;
+    margin: 0px 10px 10px 10px;
+    border: 1px solid white;
+
+
+}
+.footer__padre {
+    grid-area: footer;
+    text-align: center;
+    color: white;
+    height: 100px;
+    background-color: rgb(117, 35, 6);
+    padding-top: 10px;
+
+
+}
