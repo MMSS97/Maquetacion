@@ -80,7 +80,33 @@ let profesionales =[
     new Professional ("Will Smith", 56, 95, 189, false, "eeuu",5,"actor","https://upload.wikimedia.org/wikipedia/commons/6/67/Will_Smith_by_Gage_Skidmore_2.jpg"),
     new Professional ("Penelope Cruz", 46, 65, 170, false,"España",2,"actriz","https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Goyas_2024_-_Pen%C3%A9lope_Cruz-2_%28cropped%29.jpg/1200px-Goyas_2024_-_Pen%C3%A9lope_Cruz-2_%28cropped%29.jpg")
     ];
-
+function renderizar() {
+    misPelis.forEach(function (peli,index){
+    document.getElementById("movie").append(`
+        <div class="col-md-6 m-5">
+       <div class="movie-card card h-100">
+           <div class="row g-0">
+               <div class="col-md-4">
+                   <img src="${peli.photo || 'no hay una imagen disponible'}" 
+                        class="movie-poster img-fluid rounded-start" alt="${peli.title}">
+               </div>
+               <div class="col-md-8">
+                   <div class="card-body">
+                       <h5 class="card-title">${peli.title} (${peli.releaseYear})</h5>
+                       <p class="card-text">
+                           <strong>Género:</strong> ${peli.genre}<br>
+                           <strong>Director:</strong> ${peli.director.name}<br>
+                           <strong>Actores:</strong> ${peli.actor}<br>
+                           <strong>Personaje principal:</strong> ${peli.mainCharacterName}<br>
+                           <strong>Idioma:</strong> ${peli.language}<br>
+                           <strong>MCU:</strong> ${peli.isMCU ? 'Sí' : 'No'}
+                       </p>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>`)
+})}
 $(document).ready(function () {
     
     
@@ -130,7 +156,7 @@ $(document).ready(function () {
                 </div>
             `)
     })
-    $('#subir').submit(function() {
+    $('#subir').click(function() {
         
         const nuevaPeli = new Movie(
             $('#title').val(),
@@ -158,6 +184,7 @@ $(document).ready(function () {
     
             })
             ;
+            renderizar()
 
 
 
