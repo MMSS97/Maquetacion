@@ -1,0 +1,18 @@
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 2fr 1fr 2fr 2fr 1fr 2fr;
+    grid-template-rows: 2fr 1fr;
+}
+.a{
+    background-color: greenyellow;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+}
+.b{
+    background-color: black;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
