@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu agencia de viajes</title>
+    <link rel="stylesheet" href="agenciaDeViajes.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <main class="main_padre">
+        <header>
+            <img src="favicon.ico" alt=""><h1>Viaja facil</h1>
+        </header>
+           
+        <section>
+                <p>
+                    somos la cadena de viajes que las otras cadenas quieren imitar
+                </p>
+                <p>
+                    tenemos + de 150 destinos que puedes conocer, visitar y amar. <br> más de 1500 personas ya repiten con nostros. <br>¡conócenos!
+                </p>
+                <div id="contenedor">
+                    <aside id="tarjetas">
+                    <div class="tarjeta"><h2>Gran Canaria</h2><img src="granCanaria.jpeg" alt="gran canaria"> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex dolor quae tenetur repudiandae atque unde voluptatum illo quasi nesciunt. Veniam magnam vel iure vitae ipsum quas nobis dicta, error praesentium?</p></div>
+                    <div class="tarjeta"><h2>Galicia</h2><img src="galiciaTurismo.jpg" alt="galicia"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis adipisci perspiciatis ratione sunt suscipit quisquam blanditiis officia, similique magni deleniti. Obcaecati cumque magni consequuntur accusantium voluptatum, deserunt doloremque odio ad.</p></div>
+                    <div class="tarjeta"><h2>Gibraltar</h2><img src="gibraltarTurismo.jpeg" alt="gibraltar"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit atque in libero ad a doloremque, ipsum fuga aspernatur, numquam sed nam provident aperiam? Illo recusandae officiis debitis, optio necessitatibus consectetur!</p></div>
+                    </aside>
+                </div>
+
+        </section>
+        <div id="contacto">
+            <form id="formulario">
+                <h3>cuéntanos</h3>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="origen">Origen</label>
+                <input  type="text" id="origen" name="origen" required>
+                <label for="destino">Destino</label>
+                <input type="text" id="destino" name="destino" required>
+                <label for="personas">Numero de personas</label>
+                <input type="text" id="numeroPersonas" name="personas" required>
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha" name="fecha" required>
+
+            <div id="formulario">
+                <button type="button" onclick="informacion()">solicitar informacion</button>
+                <button type="button" onclick="filtrar()">filtrar</button>
+            </div>
+        </form>
+        </div>
+        <h3>datos filtrados</h3>
+        <div id="lista-resultados">
+            
+            
+        </div>
+
+        <footer>
+            
+        </footer>
+
+        <script src="agenciaDeViaje.js"></script>
+    </main>
+    
+</body>
+</html>

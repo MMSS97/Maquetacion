@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+  *{
+    font-family: "Nanum Gothic", serif;
+
+  }
+    .container_padre {height: 100vh}
+    .barraNavegacion{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    height: 7%;
+    width: 100vw;
+    align-items: center;
+    .ip{
+      color: aliceblue;
+      text-decoration: none;     
+    }}
+    .container_padre header {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;   
+        height: 13%;     
+    }
+    .container_padre header h2 {
+        font-weight:border;
+        display: flex;
+        align-items: flex-start;
+        margin: 0%;
+    }
+    .container_padre div {
+        display: flex;
+        flex-direction: row;
+        height: 70%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .container_padre div div aside {
+        width:100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+           
+}
+    .container_padre div div{
+        display: flex;
+        align-items: center;
+        width: 40%;
+
+}
+    .container_padre div aside p {
+        font-size: xx-small;
+        text-align: center;
+        display: flex;
+                        
+    }
+    .container_padre div section {
+        width: 48%;
+        height: 93%;
+        justify-content: center;
+        justify-items: center;
+    }
+    .container_padre div section img {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-items: center;
+    }

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+  *{
+    font-family: "Nanum Gothic", serif;
+
+  }
+    .container_padre {height: 100vh}
+    .barraNavegacion{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    height: 7%;
+    width: 100vw;
+    align-items: center;
+    
+    .ip{
+      color: aliceblue;
+      text-decoration: none;     
+    }}
+    .container_padre section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;  
+        width: 100vw;   
+        
+    }
+    .container_padre section img {
+      height: 50vh;
+      width: 33.33333333333333333333%;
+
+    }
