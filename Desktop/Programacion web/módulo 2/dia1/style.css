@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+  *{
+    font-family: "Nanum Gothic", serif;
+
+  }
+    .container_padre{height: 100vh;
+    }
+    .barraNavegacion{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    height: 7%;
+    width: 100vw;
+    align-items: center;
+    .ip{
+      color: aliceblue;
+      text-decoration: none;
+      
+    }
+  
+}
+
+.container_padre div{
+  display: flex;
+  flex-direction:row;
+  justify-content: left;
+  align-items: start;
+  flex-wrap: wrap;
+  margin-top: 3%;
+  height: 93%;
+  width: 100VW;
+}
+
+.container_padre div section{
+  width: 66%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+.container_padre div section header {
+  height: 13%;
+  width: 50%;
+  display: flex;
+  justify-content: left;
+  align-items: end;
+  margin-left: 15%;
+  font-weight: bolder;
+  
+  
+}
+.container_padre div section section{
+  width: 80%;
+  font-size: xx-small;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-left: 15%;
+}
+.container_padre div aside{
+  width: 20%;
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  margin-top: 2%;
+  margin-right: 10%;
+}
+.container_padre div aside img{
+  height: 100%;
+  width: 100%;
+  
+  
+}

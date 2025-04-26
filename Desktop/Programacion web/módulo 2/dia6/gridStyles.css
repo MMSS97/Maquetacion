@@ -1,0 +1,30 @@
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: 50%;
+}
+.a {
+    background-color: aqua;
+    text-align: center;
+}
+.b{    background-color: rgb(90, 160, 24);
+    text-align: center;
+
+}
+.c{
+    background-color: rgb(185, 155, 57);
+    text-align: center;
+}
+.d{
+    background-color: rgb(180, 44, 17);
+    text-align: center;
+}
+.e{
+    background-color: rgb(51, 15, 136);
+    text-align: center;
+}
+.f{
+    background-color: rgb(49, 109, 53);
+    text-align: center;
+}
